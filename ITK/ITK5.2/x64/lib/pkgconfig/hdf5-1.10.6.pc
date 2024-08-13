@@ -1,0 +1,14 @@
+prefix=D:/UltrastRepos/libs/ITK/x64
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: hdf5
+Description: HDF5 (Hierarchical Data Format 5) Software Library
+Version: 1.10.6
+
+Cflags: -I${includedir}
+Libs: -L${libdir} 
+Requires: 
+Libs.private:  -litkzlib  -lhdf5
+Requires.private: 
